@@ -2,7 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import confetti from 'canvas-confetti';
 
-const API_BASE = 'http://127.0.0.1:5000';
+//for running locally comment the API BASE hosted on render and uncomment the localhost
+// const API_BASE = 'http://127.0.0.1:5000';
+const API_BASE = 'https://buffalingo-backend.onrender.com';
 const popSound = new Audio('/pop.mp3');
 
 type HistoryItem = {
