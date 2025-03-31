@@ -8,7 +8,9 @@ from dotenv import load_dotenv
 import os
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
+# if you are running it locally uncomment the below line and comment the one with the hosted url
+# CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
+CORS(app, resources={r"/*": {"origins": "https://buffalingo-frontend.onrender.com"}})
 
 load_dotenv()  # Load variables from .env
 
